@@ -9,16 +9,12 @@ const AboutContent = () => {
   return (
     <div className="about">
       <div className="left">
-        <h1>Who Am I</h1>
-        <p>
-          Iam a react Front-end developer. I create responsive secure websites
-          for my clients
-        </p>
+        <h1 className="">Who Am I</h1>
+        <p>Iam a Fullstack developer. I create responsive secure websites</p>
         <Link to="/contact">
           <button className="btn">Contact</button>
         </Link>
       </div>
-
       <div className="right">
         <div className="image-container">
           <div className="top">
