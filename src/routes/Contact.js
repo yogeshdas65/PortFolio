@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import HeroImg2 from "../components/HeroImg2";
 import Navbar from "../components/Navbar";
+// hello
 
 const Contact = () => {
   return (
