@@ -8,7 +8,7 @@ const HeroImg = () => {
   return (
     <div className="hero">
       <div className="mask">
-        <img className="into-img" src={Intro} alt="Intro-img"></img>
+        <img className="intro-img" src={Intro} alt="Intro-img"></img>
       </div>
       <div className="content">
          {/* Animate the paragraph with Framer Motion */}
