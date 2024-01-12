@@ -23,7 +23,7 @@ const Navbar = () => {
       <Link to="/">
         <h1> Portfolio</h1>
       </Link>
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
+      <ul className={`text-gray-100  ${click ? "nav-menu active" : "nav-menu"}`}>
         <li>
           <Link to="/">Home</Link>
         </li>
