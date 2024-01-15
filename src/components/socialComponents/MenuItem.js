@@ -59,7 +59,7 @@ export const MenuItem = ({ i }) => {
             icon={socialMediaIcons[i]}
             size="3x"
              className={`text-${colors[i]}  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`}
-             style={{ color: colors[i] }}
+             style={{ color: "white" }}
           />
         </a>
       </div>
