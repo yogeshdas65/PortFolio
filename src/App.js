@@ -14,7 +14,7 @@ import { useDimensions } from "./components/socialComponents/use-dimensions";
 
 const sidebar = {
   open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    // clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
     transition: {
       type: "spring",
       stiffness: 20,
@@ -33,29 +33,24 @@ const sidebar = {
 };
 
 function App() {
-  const [isOpen, toggleOpen] = useCycle(false, true);
-  const containerRef = useRef(null);
-  const { height } = useDimensions(containerRef);
+  // const [isOpen, toggleOpen] = useCycle(false, true);
+  // const containerRef = useRef(null);
+  // const { height } = useDimensions(containerRef);
 
   return (
     <>
-      <motion.div
+    
+      {/* <motion.div
         initial={false}
         animate={isOpen ? "open" : "closed"}
         custom={height}
         ref={containerRef}
-        style={{
-          position: "fixed",
-          right: "0%",
-          bottom: "0%",
-          transform: "translate(-50%, -50%)",
-          zIndex: 1000,
-        }}
+        className="fixed right-[1px] bottom-[1px]  z-50"
       >
-        <motion.div className="background" variants={sidebar} />
+         <motion.div className="fixed top-5% left-5% bottom-0 w-[100px] h-[100px]  bg-white" variants={sidebar} />
         <Navigation />
         <MenuToggle toggle={() => toggleOpen()} />
-      </motion.div>
+      </motion.div>  */}
 
       <Routes>
         <Route path="/" element={<Home />} />
