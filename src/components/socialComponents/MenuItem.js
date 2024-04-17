@@ -7,16 +7,22 @@ import {
   faFacebook,
   faInstagram,
   faLinkedin,
-  faWhatsapp
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-const socialMediaIcons = [faTwitter, faFacebook, faInstagram, faLinkedin , faWhatsapp ];
+const socialMediaIcons = [
+  faTwitter,
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faWhatsapp,
+];
 const socialMediaLinks = [
   "https://twitter.com/example",
   "https://facebook.com/example",
   "https://instagram.com/example",
   "https://linkedin.com/in/example",
-  "https://web.whatsapp.com"
+  "https://wa.me/+918767327468",
 ];
 
 const variants = {
@@ -53,13 +59,13 @@ export const MenuItem = ({ i }) => {
         style={style}
       ></div> */}
       {/* w-[200px] h-400  border-2 border-rose-500*/}
-      <div className="rounded-2xl  flex-1 relative mb-2   " >
+      <div className="rounded-2xl flex-1 relative mb-2">
         <a href={socialMediaLinks[i]} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={socialMediaIcons[i]}
             size="3x"
-             className={`text-${colors[i]}  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`}
-             style={{ color: "white" }}
+            className={`text-${colors[i]}  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`}
+            style={{ color: "white" }}
           />
         </a>
       </div>
